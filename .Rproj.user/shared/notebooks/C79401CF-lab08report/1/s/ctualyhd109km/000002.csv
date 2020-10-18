@@ -1,0 +1,4 @@
+"0","samplesOfSize30 <- replicate(1000, {"
+"0","  s <- penguins[sample(1:333, size = 30), ]"
+"0","  proportions(table(s$species))[""Gentoo""]"
+"0","})"

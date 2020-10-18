@@ -1,0 +1,26 @@
+{
+    "id": "49564635",
+    "path": "/cloud/project/lab08report.Rmd",
+    "project_path": "lab08report.Rmd",
+    "type": "r_markdown",
+    "hash": "2054707196",
+    "contents": "",
+    "dirty": false,
+    "created": 1602608243415.0,
+    "source_on_save": false,
+    "relative_order": 1,
+    "properties": {
+        "tempName": "Untitled1",
+        "cursorPosition": "268,78",
+        "scrollLine": "257",
+        "last_setup_crc32": ""
+    },
+    "folds": "",
+    "lastKnownWriteTime": 1603065178,
+    "encoding": "UTF-8",
+    "collab_server": "",
+    "source_window": "",
+    "last_content_update": 1603065178743,
+    "read_only": false,
+    "read_only_alternatives": []
+}

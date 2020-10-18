@@ -1,0 +1,3 @@
+"0","segments(proportions(table(penguins$species))[""Gentoo""], 0, "
+"0","         proportions(table(penguins$species))[""Gentoo""], 2000, "
+"0","         lwd = 5, lty = ""dashed"", col = ""darkblue"")"
