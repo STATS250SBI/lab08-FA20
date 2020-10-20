@@ -1,1 +1,1 @@
-"0","sample1 <- penguins[sample(1:333, size = 30), ]"
+"0","sample1 <- penguins[sample(1:333, size = 20), ]"
