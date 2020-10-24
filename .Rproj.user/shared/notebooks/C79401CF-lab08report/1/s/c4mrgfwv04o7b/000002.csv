@@ -1,2 +1,0 @@
-"0","# Remember to set stringsAsFactors = TRUE!"
-"0","penguins <- read.csv(""https://raw.githubusercontent.com/STATS250SBI/palmerpenguins/master/inst/extdata/penguins_NArm.csv"", stringsAsFactors = TRUE)"

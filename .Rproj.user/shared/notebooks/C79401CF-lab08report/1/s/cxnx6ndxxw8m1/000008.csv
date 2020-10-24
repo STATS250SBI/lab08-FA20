@@ -1,3 +1,0 @@
-"0","# we'll now use abline to add a vertical line at p, the 'population' proportion"
-"0","abline(v = proportions(table(penguins$species))[""Gentoo""],"
-"0","       lwd = 5, lty = ""dashed"", col = ""darkblue"")"
