@@ -21,6 +21,7 @@ source("sample_two_groups.R")
 1. Discover the central limit theorem
 
 ### Functions covered in this lab
+1. `proportions()`
 1. `replicate()`
 
 ### Weekly Advice
@@ -206,6 +207,7 @@ What we're discovering here is called **the central limit theorem**:
 > **Central Limit Theorem:** If we look at a proportion (or difference in proportions) and the scenario satisfies certain conditions, then the sample proportion (or difference in proportions) will appear to follow a bell-shaped curve called the *normal distribution*.
 
 The two conditions we need to satisfy are:
+
 1. **Observations in the sample are independent.** This is guaranteed if we have a random sample, or if we randomly divide individuals into treatment and control groups.
 2. **The sample is large enough.** Here, "large enough" means $n\times p \geq 10$ and $n\times (1-p) \geq 10$, where $n$ is the sample size and $p$ is the *population proportion*. If we don't have $p$, we can usually use $\hat{p}$ as a good estimate.
 
@@ -254,7 +256,7 @@ This week we will be working with data from the Stats 250 beginning of term stud
 
 Replace this text with your answer to Try It 3.
 
-> **4.** We will use a total of 100 poker chips to simulate the null hypothesis model. Fill in the blanks: In order to conduct the simulation, a researcher decided that a blue poker chip represents ______(a)______ and a yellow poker chip represents ______(b)______. There will be _____(c)_____ blue poker chips and _____(d)_____ yellow poker chips. To perform the simulation, we will mix the blue and yellow poker chips, select ______(e)______ from the bag, and record the color before replacing the chip in the bag. The researcher will pick ______(f)______ times to complete the simulation. Then he will count how many ______(g)______ poker chips he has and divided by ______(h)______ to find the simulated proportion.
+> **4.** We will use a total of 100 poker chips to simulate the null hypothesis model. Fill in the blanks: In order to conduct the simulation, a researcher decided that a blue poker chip represents ______(a)______ and a yellow poker chip represents ______(b)______. There will be _____(c)_____ blue poker chips and _____(d)_____ yellow poker chips. To perform the simulation, we will mix the blue and yellow poker chips, select one from the bag, and record the color before replacing the chip in the bag. The researcher will pick ______(e)______ times to complete this single simulation. Then he will count how many ______(f)______ poker chips he has and divided by ______(g)______ to find the simulated proportion.
 
 Replace this text with your answer to Try It 4.
 
@@ -263,14 +265,27 @@ Replace this text with your answer to Try It 4.
 ```{r tryIt5, error = T}
 # We've got some code to help you get started here. Fill in the blanks in the code with your numbers from Try It 4. When you fill in the blanks, REMOVE THE UNDERSCORES COMPLETELY.Your code won't run otherwise.
 
-chip <- c(rep("blue", ___(c)___), rep("yellow", ___(d)___))
+# the chip vector represents your bag of poker chips
+bagOfChips <- c(rep("blue", ___(c)___), rep("yellow", ___(d)___))
+
+# now repeat the procedure from Try It 4 1000 times.
 pHatSims <- replicate(1000, {
-  # use the sample() function to draw samples of size (e) from the vector called
-  # chip. be sure to set replace = TRUE inside of sample(). Only put your code
-  # HERE, do NOT type outside of the curly braces.
+  # Draw (e) chips from the bag of chips (with replacement)
+  x <- sample(bagOfChips, size = ___(e)___, replace = TRUE)
+  
+  # Compute the proportion of sampled chips that are the color you chose in (f).
+  # You should either choose "blue" or "yellow", and your answer needs to be
+  # inside those quotes! So the code should either be sum(x == "blue") or 
+  # sum(x == "yellow").
+  sum(x == "___(f)___") / ___(g)___
 })
 
+# To find a p-value, use the sum function and divide by the number of simulations.
+# See line 230 for some code from lab 7 that might be useful.
+
 ```
+
+
 
 Replace this text with your answer to Try It 5.
 
