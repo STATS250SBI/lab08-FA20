@@ -1,6 +1,6 @@
-.Rproj.user/*
-.Rproj.user/B73902F4/
+.Rproj.user/
 .Rhistory
 .RData
 .Ruserdata
-.html
+lab08solution.Rmd
+*.html
