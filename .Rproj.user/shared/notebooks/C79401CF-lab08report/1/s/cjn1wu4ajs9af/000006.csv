@@ -1,5 +1,0 @@
-"0","hist(samplesOfSize100,"
-"0","     main = ""Sampling distribution of p-hat, n = 100"","
-"0","     xlab = ""p-hat values"","
-"0","     col = ""darkturquoise"","
-"0","     xlim = c(0, 1))"
